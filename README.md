@@ -18,7 +18,7 @@ Dumps huge Graphson's into CSV files which can be fed into Neo4j Batch importer.
 
 ```
 java -server -Xmx4G -jar target/BatchTools-1.0-SNAPSHOT-jar-with-dependencies.jar
-json2csv <path_to_graphson> <output_folder>  nodeProperty1:type, nodeProperty2:type...
+json2csv <path_to_graphson> <output_folder>  nodeProperty1:type,nodeProperty2:type...
 ```
 
 ## Getting a Graphson out of Neo4j Database
