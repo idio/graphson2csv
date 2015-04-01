@@ -13,10 +13,12 @@ Dumps huge Graphson's into CSV files which can be fed into Neo4j Batch importer.
 
 - `<path_to_graphson>`: Path to `graphson.json`
 - `<output_folder>` : Folder where `nodes.csv` and `relationships.csv` will be generated
+- `nodeProperty` : Stands for the property names of the nodes in the graph i.e: `age`
+- `type` : Stands for the type of a node property. i.e: string, int..
 
 ```
 java -server -Xmx4G -jar target/BatchTools-1.0-SNAPSHOT-jar-with-dependencies.jar
-json2csv <path_to_graphson> <output_folder> dfr:int,alias:string,enid:string,dbpedia_id:string,updated:int,name:string,images:string,wiki:string,wordnet:string,mid:string,wikiabstract:string,modified:string,gravity:string,score:string
+json2csv <path_to_graphson> <output_folder>  nodeProperty1:type, nodeProperty2:type...
 ```
 
 ## Getting a Graphson out of Neo4j Database
